@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills</title>
+
+<style>
+body{background:#0f172a;color:#e5e7eb;font-family:Arial}
+header {
+  background: linear-gradient(180deg, #020617, #020617cc);
+  border-bottom: 1px solid #1e293b;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  height: 70px;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.25s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.25s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+main{max-width:800px;margin:40px auto}
+li{background:#020617;padding:10px;margin:10px 0;border-radius:6px}
+h1{color:#38bdf8}
+</style>
+</head>
+
+<body>
+<header>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h1>Programming Skills</h1>
+<ul>
+<li>Python</li>
+<li>HTML & CSS</li>
+<li>JavaScript</li>
+<li>C++</li>
+</ul>
+</main>
+</body>
+</html>

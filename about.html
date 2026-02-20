@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Sy Hieu Pham</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+  body{background:#0f172a;color:#e5e7eb;line-height:1.6}
+
+  header{background:#020617;padding:15px;border-bottom:1px solid #1e293b}
+  nav{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+  nav a{
+    color:#38bdf8;text-decoration:none;font-weight:bold;
+    padding:6px 0;position:relative
+  }
+  nav a::after{
+    content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;
+    background:#38bdf8;transition:0.25s
+  }
+  nav a:hover{color:#fff}
+  nav a:hover::after{width:100%}
+
+  main{max-width:950px;margin:40px auto;padding:0 20px}
+
+  .grid{
+    display:grid;
+    grid-template-columns: 280px 1fr;
+    gap:25px;
+    align-items:start;
+  }
+
+  .card{
+    background:#020617;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:20px;
+  }
+
+  h1{color:#38bdf8;margin-bottom:10px;font-size:2rem}
+  h2{color:#38bdf8;margin:18px 0 10px;font-size:1.25rem}
+
+  .profile{
+    text-align:center;
+  }
+  .profile img{
+    width:160px;height:160px;border-radius:50%;
+    object-fit:cover;
+    border:3px solid #38bdf8;
+    margin:10px 0 12px;
+  }
+  .tag{
+    display:inline-block;
+    background:#0b1220;
+    border:1px solid #1e293b;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:0.9rem;
+    margin:6px 6px 0 0;
+    color:#cbd5e1;
+  }
+
+  .facts{
+    list-style:none;
+    margin-top:10px;
+  }
+  .facts li{
+    padding:10px 0;
+    border-top:1px solid #1e293b;
+  }
+  .facts li:first-child{border-top:none}
+  .facts strong{color:#cbd5e1}
+
+  .timeline{
+    list-style:none;
+    padding-left:0;
+  }
+  .timeline li{
+    padding:12px 0;
+    border-top:1px solid #1e293b;
+  }
+  .timeline li:first-child{border-top:none}
+  .timeline span{
+    display:block;
+    color:#cbd5e1;
+    font-weight:bold;
+  }
+
+  .btn-row{
+    display:flex;gap:12px;flex-wrap:wrap;margin-top:14px
+  }
+  .btn{
+    display:inline-block;
+    padding:10px 14px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    border:1px solid #1e293b;
+    background:#0b1220;
+    color:#38bdf8;
+    transition:0.2s;
+  }
+  .btn:hover{background:#0f172a;color:#fff}
+
+  footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:#020617;
+    border-top:1px solid #1e293b;
+    color:#94a3b8;
+  }
+
+  @media (max-width: 800px){
+    .grid{grid-template-columns:1fr}
+    .profile img{width:140px;height:140px}
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="grid">
+
+    <aside class="card profile">
+      <h1>About Me</h1>
+
+      <div>
+        <span class="tag">Cabramatta High School</span>
+        <span class="tag">Year 12</span>
+      </div>
+
+      <ul class="facts">
+        <li><strong>Name:</strong> Sy Hieu Pham</li>
+        <li><strong>School:</strong> Cabramatta High School</li>
+        <li><strong>Focus:</strong> Python, HTML/CSS, JavaScript, C++</li>
+      </ul>
+
+      <div class="btn-row">
+        <a class="btn" href="contact.html" style="margin-left: 70px;">Contact</a>
+      </div>
+    </aside>
+
+    <section class="card">
+      <h2>Introduction</h2>
+      <p>
+        I am a Year 12 student at Cabramatta High School studying Software Engineering.
+        I enjoy building web projects, learning programming concepts, and applying problem-solving skills to real tasks.
+      </p>
+
+      <h2>What I’m Working On</h2>
+      <ul class="timeline">
+        <li>
+          <span>Web Portfolio</span>
+          Developing a multi-page website with clean layout, responsiveness, and navigation.
+        </li>
+        <li>
+          <span>Weather API Project</span>
+          Using JavaScript to fetch live weather data and display it clearly with error handling.
+        </li>
+        <li>
+          <span>Programming Practice</span>
+          Improving logic and efficiency using Python and C++ through small projects and exercises.
+        </li>
+      </ul>
+
+      <h2>Goals</h2>
+      <p>
+        My goal is to strengthen my full-stack fundamentals (HTML/CSS/JS), build reliable API-based apps,
+        and keep improving my programming skills through continuous practice.
+      </p>
+    </section>
+
+  </section>
+</main>
+
+<footer>
+  © 2026 Sy Hieu Pham
+</footer>
+</body>
+</html>
